@@ -148,6 +148,10 @@ p {
         margin-right: auto;
     }
 
+    .main-image {
+        padding-left: 40px;
+    }
+
     h1 {
         text-align: center;
     }
