@@ -79,32 +79,53 @@ p {
 }
 
 .content {
-    /* margin-top: 100px; */
-    height: 700px;
-    /* margin-bottom: 235px; */
+    padding-top: 100px;
+    min-height: 700px;
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
 }
 
 .main-text {
     margin-top: 50px;
     padding-top: 100px;
+    padding-left: 78px;
+    padding-right: 100px;
+    margin: 0 auto;
     width: 450px;
-    height: 270px;
+    height: 500px;
 }
 
 .main-image {
-    margin-top: 50px;
-    margin-right: 78px;
-    width: 480px;
-    height: 480px;
-    border-radius: 50%;
-    overflow: hidden;
+    padding-left: 100px;
+    width: 50%;
+    margin-left: auto;
+}
+
+@media (max-width: 900px) {
+    body {
+        background-size: contain;
+        background-position: center top;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .main-text, .main-image {
+        flex: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 img {
     width: 100%;
+    min-width: 400px$;
+    max-width: 500px;
 }
 
 .line {
